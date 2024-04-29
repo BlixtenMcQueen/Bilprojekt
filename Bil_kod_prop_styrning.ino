@@ -70,12 +70,17 @@ void loop() {
     }
     int16_t servo_result = distance_L - distance_R;
    
-
-
     //distance_L - distance_R = servo result
     // servo_result * konstant + 90 = servosvängning
-    uint16_t servo_steer = servo_result * constant + 87;
-   
+    int16_t servo_steer = servo_result * constant + 87;
+    
+    if(servo_steer > 170){
+       servo_steer = 170;
+    }
+
+    if(servo_steer < 15){
+      servo_steer = 15;
+    }
 
     // Om vänster sensor upptäcker ett närmare objekt än höger sensor
     if ((distance_L < distance_R) || (distance_L > distance_R)) {
