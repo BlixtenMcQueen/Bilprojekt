@@ -23,3 +23,17 @@ Förenklat några av if satsernas villkor
  # Bil_kod_14Maj_Slack
  Samma kod som Bil_kod_14Maj fast lagt till SLACK funktion.
  Programmet väljer att svänga när ena sidosensorn är SLACK cm längre ifrån den andra.
+
+# Bil_kod_14Maj_MittenPos
+Utgår från Bil_kod_14Maj_Slack.
+Ny funktion är att om ena sidosensorn registrerar max värde så används det gamla sensorvärdet istället.
+Detta gjordes för att se om vänster sensorn registrerar max värde när den ligger nära vänster kant på banan.
+Och för att komma runt det eventuellt.
+      // Vänster sensor registrerar max värde (ev pga reflektioner och vinklade sensorer)
+      if (distance_L == side_maxdist) {
+          // Gammalt värde vänster sensor mindre än höger plus slack
+          if (distance_L_old < (distance_R - slack)) { 
+              turn = true; 
+              use_old_sensor_value = true;
+          }
+      }
