@@ -22,4 +22,4 @@ Förenklat några av if satsernas villkor
 
  # Bil_kod_14Maj_Slack
  Samma kod som Bil_kod_14Maj fast lagt till SLACK funktion.
- 
+ Programmet väljer att svänga när ena sidosensorn är SLACK cm längre ifrån den andra.
