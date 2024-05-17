@@ -10,7 +10,7 @@ Ultraljudssensorer Vänster, Höger & Front. Utskrift av sensorvärden till Seri
 Backfunktion - under visst avstånd stannar bilen 0,5s backar 1s med lägre hastighet och stoppar 0,5s igen innan den kör framåt.
 
 # Bil_kod_14Maj
-Bygger på Bil_kod_V1.1. Efter varje avläsning av varje sidosensor tar programmet ett beslut hur servot ska svänga.
+VINNAR KODEN! Bygger på Bil_kod_V1.1. Efter varje avläsning av varje sidosensor tar programmet ett beslut hur servot ska svänga.
 I variabel deklarationerna längst upp kan man sätta maximalt avstånd för ultraljudssensorer.
 Max front sensor = 10 cm
 Max sido sensorer = 55 cm
