@@ -37,3 +37,11 @@ Och för att komma runt det eventuellt.
               use_old_sensor_value = true;
           }
       }
+
+# Bil_kod_Final
+Utgår från Bil_kod_14Maj (Vinnarkoden).
+Ändrat vissa datatyper för att passa anropade funktioner mm.
+Infört några konstanter för mer överskådlighet.
+Kommenterat och strukturerat koden ytterligare.
+
+     
